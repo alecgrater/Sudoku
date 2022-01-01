@@ -1,9 +1,18 @@
 # Sudoku
+Sudoku auto-solver via recursion and backtracking algorithm
 
-Sudoku auto-solver via recursion and backtracing algrorithm. 
+## Prerequisites
+Using [Sudoku Package](https://pypi.org/project/py-sudoku/) to generate a new board
 
-# GUI
+To install, run:
+`pip3 install py-sudoku`
 
-Gui currently under development. Two goals with this project:
-1. create an interactable interface for the user to attempt to solve sudoku puzzles
-2. visualize backtracing algorithm in real time.
+# Sudoku
+From root directory, run:
+`python3 main.py`
+
+# Gui (under development)
+
+Two goals with this project:
+1. create an intractable interface for the user to attempt to solve sudoku puzzles
+2. visualize backtracking algorithm in real time.
