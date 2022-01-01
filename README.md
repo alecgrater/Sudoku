@@ -7,9 +7,16 @@ Using [Sudoku Package](https://pypi.org/project/py-sudoku/) to generate a new bo
 To install, run:
 `pip3 install py-sudoku`
 
-# Sudoku
+## Main script
+1) Generates a new board, prints the board.
+2) Solves the board, prints the soled board.
+
 From root directory, run:
 `python3 main.py`
+## Demo
+<p align="center">
+<img src="https://github.com/alecgrater/Sudoku/blob/master/Demo.png" width="500" height="400"></img>
+</p>
 
 # Gui (under development)
 
