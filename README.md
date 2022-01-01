@@ -14,8 +14,7 @@ To install, run:
 From root directory, run:
 `python3 main.py`
 ## Demo
-<p align="center">
-<img src="https://github.com/alecgrater/Sudoku/blob/master/Demo.png" width="500" height="400"></img>
+<img src="https://github.com/alecgrater/Sudoku/blob/master/Demo.png"    style="height:70%;"></img>
 </p>
 
 # Gui (under development)
