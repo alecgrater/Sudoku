@@ -9,17 +9,17 @@ def find_empty(board):
 
 
 def check_valid(board, num, pos):
-    # check row
+    # checking row
     temp_list_row = [i for i in board[pos[0]]]
     if num in temp_list_row:
         return False
 
-    # check column
+    # checking column
     temp_list_column = [i[pos[1]] for i in board]
     if num in temp_list_column:
         return False
 
-    # check box.
+    # checking box
     temp_list_box = []
     box_row = pos[0] // 3
     box_col = pos[1] // 3
