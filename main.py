@@ -1,14 +1,4 @@
-board1 = [
-    [7, 8, 0, 4, 0, 0, 1, 2, 0],
-    [6, 0, 0, 0, 7, 5, 0, 0, 9],
-    [0, 0, 0, 6, 0, 1, 0, 7, 8],
-    [0, 0, 7, 0, 4, 0, 2, 6, 0],
-    [0, 0, 1, 0, 5, 0, 9, 3, 0],
-    [9, 0, 4, 0, 6, 0, 0, 0, 5],
-    [0, 7, 0, 3, 0, 0, 0, 1, 2],
-    [1, 2, 0, 0, 0, 7, 4, 0, 0],
-    [0, 4, 9, 2, 0, 6, 0, 0, 7],
-]
+from sudoku import Sudoku
 
 # locate first empty square, denoted with a zero.
 def find_empty(board):
@@ -63,7 +53,7 @@ def solve(board):
 def print_board(board):
     for i in range(len(board)):
         if i % 3 == 0 and i != 0:
-            print("- - - - - - - - - - - - - ")
+            print("- - - - - - - - - - - -")
         for j in range(len(board[0])):
             if j % 3 == 0 and j != 0:
                 print(" | ", end="")
@@ -73,9 +63,40 @@ def print_board(board):
                 print(str(board[i][j]) + " ", end="")
 
 
-print_board(board1)
-solve(board1)
-print("___________________")
-print("___________________")
-print("___________________")
-print_board(board1)
+def print_title(is_solved):
+    if is_solved == False:
+        title = "       UNSOLVED:       "
+    else:
+        title = "        SOLVED:        "
+    print("\n")
+    print(title)
+    print("_______________________")
+    print("\n")
+
+
+def main():
+    # generate new puzzle via sudoku package
+    # note this package can also solve puzzles, this project is purely for fun
+    puzzle = Sudoku(3)
+    board = puzzle.board
+
+    # module denotes empties with None instead of 0, so...
+    for lst in board:
+        for index, item in enumerate(lst):
+            if item == None:
+                lst[index] = 0
+
+    print(board)
+
+    print_title(is_solved=False)
+    print_board(board)
+
+    solve(board)
+
+    print_title(is_solved=True)
+    print_board(board)
+    print("\n")
+
+
+if __name__ == "__main__":
+    main()
