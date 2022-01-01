@@ -20,4 +20,4 @@ From root directory, run:
 
 Two goals with this project:
 1. create an intractable interface for the user to attempt to solve sudoku puzzles
-2. visualize backtracking algorithm in real time.
+2. visualize backtracking algorithm in real time
