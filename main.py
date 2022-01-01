@@ -86,8 +86,6 @@ def main():
             if item == None:
                 lst[index] = 0
 
-    print(board)
-
     print_title(is_solved=False)
     print_board(board)
 
