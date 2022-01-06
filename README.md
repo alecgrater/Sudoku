@@ -9,7 +9,7 @@ To install, run:
 
 ## Main script
 1) Generates a new board, prints the board.
-2) Solves the board, prints the soled board.
+2) Solves the board, prints the solved board.
 
 From root directory, run:
 `python3 main.py`
