@@ -15,9 +15,3 @@ From root directory, run:
 `python3 main.py`
 ## Demo
 <img src="https://github.com/alecgrater/Sudoku/blob/master/screenshot.png" width="200" height="543.22"></img>
-
-# Gui (under development)
-
-Two goals with this project:
-1. create an intractable interface for the user to attempt to solve sudoku puzzles
-2. visualize backtracking algorithm in real time
